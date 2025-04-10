@@ -1,0 +1,39 @@
+{
+  "name": "media-sdk",
+  "version": "1.0.0",
+  "description": "hailian media sdk",
+  "private": true,
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --config webpack.deve.config.js",
+    "build": "webpack --config webpack.prod.config.js",
+    "watch": "webpack --config webpack.deve.config.js --watch --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://10.18.218.185:3000/chengdongsheng/media-sdk.git"
+  },
+  "keywords": [
+    "media",
+    "sdk"
+  ],
+  "author": "chengdongsheng",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "qs": "^6.11.2"
+  },
+  "eslintConfig": {
+    "rules": {
+      "no-console": "off",
+      "no-debugger": "off"
+    }
+  }
+}

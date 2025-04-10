@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>调度/终端</title>
+    <desc>Created with Sketch.</desc>
+    <g id="调度/终端" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="人员_people">
+            <polygon id="路径" fill-opacity="0.01" fill="#FFFFFF" fill-rule="nonzero" points="30 0 0 0 0 30 30 30"></polygon>
+            <path d="M15,14 C17.2091429,14 19,12.2091429 19,10 C19,7.79086286 17.2091429,6 15,6 C12.7908571,6 11,7.79086286 11,10 C11,12.2091429 12.7908571,14 15,14 Z" id="路径" stroke="#FFFFFF" stroke-width="2"></path>
+            <path d="M17,18 L12.1717172,18 C10.3614545,18 9.45632323,18 8.76488889,18.3736714 C8.15667879,18.7023857 7.66219394,19.2269143 7.35230303,19.8720429 C7,20.6054571 7,21.5655429 7,23.4857143 L7,24 L17,24" id="路径" stroke="#FFFFFF" stroke-width="2"></path>
+        </g>
+        <rect id="矩形" stroke="#FFFFFF" stroke-width="2" x="20" y="17" width="4" height="7"></rect>
+        <rect id="矩形" fill="#FFFFFF" x="23" y="14" width="2" height="3"></rect>
+    </g>
+</svg>

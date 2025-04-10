@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>视频墙/开关</title>
+    <desc>Created with Sketch.</desc>
+    <g id="视频墙/开关" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-57-Copy-4" fill="#FF0000" opacity="0" x="0" y="0" width="30" height="30"></rect>
+        <g id="开关_power" transform="translate(6.000000, 4.000000)">
+            <rect id="矩形" fill-opacity="0.01" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="18.2608696" height="18.2608696"></rect>
+            <path d="M4.5,3 C4.18765263,3.19363886 3.88714737,3.40681543 3.6,3.63797657 C3.10855263,4.03356 2.65613684,4.48186286 2.25,4.97496 C0.849680526,6.67524 0,8.90868 0,11.3548286 C0,16.6816971 4.02944211,21 9,21 C13.9705579,21 18,16.6816971 18,11.3548286 C18,8.90868 17.1503053,6.67524 15.75,4.97496 C15.3438632,4.48186286 14.8914474,4.03356 14.4,3.63797657 C14.1128526,3.40681543 13.8123474,3.19363886 13.5,3" id="路径" stroke="#FFFFFF" stroke-width="2"></path>
+            <line x1="9" y1="1" x2="9" y2="11" id="路径" stroke="#FFFFFF" stroke-width="2"></line>
+        </g>
+    </g>
+</svg>
