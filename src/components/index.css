@@ -1,5 +1,5 @@
 .hi-button.el-button {
-  color: #ffffff;
+  color: #fff;
   font-size: 14px;
   width: 140px;
   height: 36px;
@@ -10,23 +10,27 @@
   border: none;
   background: linear-gradient(to bottom, #37c1c3, #009da2);
 }
+
 .hi-button.el-button:hover,
 .hi-button.el-button:active,
 .hi-button.el-button:focus {
   background: linear-gradient(to bottom, #32aeb0, #008d92);
 }
+
 .hi-button.el-button.is-disabled,
 .hi-button.el-button.is-disabled:hover,
 .hi-button.el-button.is-disabled:active,
 .hi-button.el-button.is-disabled:focus {
-  color: #ffffff;
+  color: #fff;
   background: #a0d5d7;
 }
+
 .hi-input {
   margin: 2px 0 16px;
 }
+
 .hi-input.el-input .el-input__inner {
-  color: #000000;
+  color: #000;
   border-radius: 0;
   border-top: none;
   border-left: none;
@@ -36,32 +40,39 @@
   padding: 0;
   font-size: 16px;
 }
+
 .hi-input.el-input .el-input__inner:focus {
   border-color: #009da2;
 }
+
 .hi-select {
   width: 100%;
   user-select: none;
   margin-bottom: 14px;
 }
+
 .hi-select.el-select .el-input {
   border-bottom: 1px solid #dcdfe6;
 }
+
 .hi-select.el-select .el-input.is-focus {
   border-color: #009da2;
 }
+
 .hi-select.el-select .el-input .el-input__inner {
   max-width: 90%;
-  color: #000000;
+  color: #000;
   border-radius: 0;
   border: none;
   padding: 0;
   font-size: 16px;
 }
+
 .room {
   display: flex;
   height: 100%;
 }
+
 .room .disconnect-tips {
   position: absolute;
   width: 400px;
@@ -69,33 +80,41 @@
   margin-left: -200px;
   top: 8px;
 }
+
 .room .left {
   width: 300px;
   min-width: 300px;
   border-right: 1px solid #00a9a7;
   padding-top: 10px;
 }
+
 .room .left .title {
   font-size: 16px;
   padding: 0 0 14px 6px;
 }
+
 .room .left .content {
   padding: 0 6px;
 }
+
 .room .left .content h3 {
-  color: rgba(0, 0, 0, 0.46);
+  color: rgba(0, 0, 0, 46%);
   font-size: 12px;
 }
+
 .room .left .user-list {
   padding: 0 6px;
 }
+
 .room .left .user-list .user {
-  color: #000000;
+  color: #000;
   margin-bottom: 4px;
 }
+
 .room .right {
   flex-grow: 2;
 }
+
 .room .right .remote-stream,
 .room .right .local-stream {
   width: 340px;
@@ -104,26 +123,30 @@
   float: left;
   margin: 10px 0 0 10px;
 }
+
 .room .right .remote-stream .video,
 .room .right .local-stream .video {
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background-color: #000;
 }
+
 .room .right .remote-stream .video video,
 .room .right .local-stream .video video {
   width: 100%;
   height: 100%;
 }
+
 .room .right .remote-stream .status,
 .room .right .local-stream .status {
-  color: #ffffff;
+  color: #fff;
   width: 100%;
   height: 40px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 40%);
   position: absolute;
   bottom: 0;
 }
+
 .room .right .remote-stream .status .name,
 .room .right .local-stream .status .name {
   width: 70%;
@@ -134,6 +157,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .room .right .remote-stream .status .stream-control,
 .room .right .local-stream .status .stream-control {
   position: absolute;
@@ -145,28 +169,33 @@
   justify-content: fl;
   align-items: center;
 }
+
 .room .right .remote-stream .status .stream-control .icon-class,
 .room .right .local-stream .status .stream-control .icon-class {
   margin-right: 8px;
 }
+
 .room .right .remote-stream .status .stream-control .icon-class.local,
 .room .right .local-stream .status .stream-control .icon-class.local {
   cursor: pointer;
 }
+
 .room .audio-mute {
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
-  background-color: #ffffff;
+  background-color: #fff;
   background: url("../assets/icons/svg/audio-muted.svg") no-repeat center;
 }
+
 .room .audio-unmute {
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
-  background-color: #ffffff;
+  background-color: #fff;
   background: url("../assets/icons/svg/audio.svg") no-repeat center;
 }
+
 .audio-content-area {
   pointer-events: auto;
   position: absolute;
@@ -177,13 +206,16 @@
   width: 691px;
   outline: none;
 }
+
 .audio-content-area .header {
   height: 70px;
 }
+
 .audio-content-area .header > div {
   display: inline-block;
   line-height: 55px;
 }
+
 .audio-content-area .header .title {
   height: 55px;
   position: absolute;
@@ -193,6 +225,7 @@
   font-weight: 400;
   color: black;
 }
+
 .audio-content-area .header .timer {
   height: 55px;
   position: absolute;
@@ -201,6 +234,7 @@
   font-size: 16px;
   font-weight: 400;
 }
+
 .audio-content-area .header .close {
   position: absolute;
   cursor: pointer;
@@ -209,6 +243,7 @@
   top: 15px;
   right: 40px;
 }
+
 .audio-content-area .audio-content {
   position: relative;
   display: flex;
@@ -217,18 +252,21 @@
   justify-content: center;
   align-items: center;
 }
+
 .audio-content-area .audio-content .content-wrapper {
   position: relative;
   width: 100%;
   min-height: 250px;
   max-height: 454px;
 }
+
 .audio-content-area .audio-content .content-wrapper .audio-tip {
   display: inline-flex;
   justify-content: center;
   width: 100%;
   line-height: 250px;
 }
+
 .audio-content-area .audio-content .content-wrapper .member-list {
   width: 100%;
   min-height: 250px;
@@ -237,17 +275,20 @@
   list-style: none;
   overflow: auto;
 }
+
 .audio-content-area .audio-content .content-wrapper .member-list .item-disable {
   cursor: default;
   opacity: 0.4;
   pointer-events: none;
 }
+
 .audio-content-area .audio-content .content-wrapper .member-list > li {
   position: relative;
   height: 42px;
   margin-left: 34px;
   margin-right: 34px;
 }
+
 .audio-content-area .audio-content .content-wrapper .member-list > li .item-icon-dispatcher {
   display: inline-block;
   position: absolute;
@@ -255,8 +296,9 @@
   width: 30px;
   height: 42px;
   background: url("../static/img/people.svg") no-repeat center;
-  color: #000000;
+  color: #000;
 }
+
 .audio-content-area .audio-content .content-wrapper .member-list > li .item-icon-terminal {
   display: inline-block;
   position: absolute;
@@ -264,8 +306,9 @@
   width: 30px;
   height: 42px;
   background: url("../static/img/terminal.svg") no-repeat center;
-  color: #000000;
+  color: #000;
 }
+
 .audio-content-area .audio-content .content-wrapper .member-list > li .item-name {
   display: inline-block;
   position: absolute;
@@ -275,6 +318,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
 .audio-content-area .audio-content .content-wrapper .member-list > li .speak {
   display: inline-block;
   position: absolute;
@@ -283,6 +327,7 @@
   height: 42px;
   right: 33px;
 }
+
 .audio-content-area .audio-content .content-wrapper .member-list > li .item-speak {
   display: inline-block;
   position: absolute;
@@ -292,6 +337,7 @@
   right: 33px;
   background: url("../static/img/speak.svg") no-repeat center;
 }
+
 .audio-content-area .audio-content .content-wrapper .member-list > li .item-speaking {
   display: inline-block;
   position: absolute;
@@ -301,6 +347,7 @@
   right: 33px;
   background: url("../static/img/speaking.svg") no-repeat center;
 }
+
 .audio-content-area .audio-content .content-wrapper .member-list > li .item-click-speak {
   display: inline-block;
   position: absolute;
@@ -311,6 +358,7 @@
   cursor: pointer;
   background: url("../static/img/speak-click.svg") no-repeat center;
 }
+
 .audio-content-area .audio-content .content-wrapper .member-list > li .item-click-speaking {
   display: inline-block;
   position: absolute;
@@ -321,6 +369,7 @@
   cursor: pointer;
   background: url("../static/img/speaking-click.svg") no-repeat center;
 }
+
 .audio-content-area .audio-content .content-wrapper .member-list > li .item-mute {
   display: inline-block;
   position: absolute;
@@ -330,6 +379,7 @@
   right: 33px;
   background: url("../static/img/mute.svg") no-repeat center;
 }
+
 .audio-content-area .audio-content .content-wrapper .member-list > li .item-click-mute {
   display: inline-block;
   position: absolute;
@@ -340,17 +390,20 @@
   cursor: pointer;
   background: url("../static/img/mute-click.svg") no-repeat center;
 }
+
 .audio-content-area .audio-content .content-wrapper .bsSpeakerTip {
   padding-left: 34px;
   color: lightgray;
   font-size: 13px;
 }
+
 .audio-content-area .audio-content .content-ring {
   position: relative;
   height: 250px;
   text-align: center;
   line-height: 250px;
 }
+
 .audio-content-area .footer {
   position: relative;
   bottom: 1px;
@@ -360,13 +413,16 @@
   justify-content: flex-end;
   align-items: center;
 }
+
 .audio-content-area .footer .footer-btns .btn {
   margin-right: 40px;
 }
+
 .audio-content-area .footer .footer-ring .acceptBtn,
 .audio-content-area .footer .footer-ring .rejectBtn {
   margin-right: 40px;
 }
+
 .audio-content-area:focus > .header > .title {
-  color: #ffffff;
+  color: #fff;
 }
