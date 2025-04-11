@@ -1,15 +1,31 @@
-import { Alert, Button, Input, message } from 'antd';
+import { Alert, Button, Input, message, Checkbox } from 'antd';
+import type { GetProp } from 'antd';
 import React, { useState } from 'react';
 // 调度 00 10
 // 终端 04 06
 import {
-  CALL_TYPE,
+  initMediaSdk,
+  unInitMediaSdk,
   create,
   FIRE_EVENT,
-  initMediaSdk,
+  MEDIA_TRACK,
+  CALL_TYPE,
+  CALL_STATE,
+  CALL_EVENT,
   MEM_STATUS,
+  leaveCall,
+  destroyCall,
+  muteRemoteAudio,
+  acceptCall,
+  rejectCall,
+  freeSpeak,
+  grabSpeak,
+
 } from '../libs/media-sdk/index';
 import './index.less';
+const onChange: GetProp<typeof Checkbox.Group, 'onChange'> = (checkedValues) => {
+  console.log('checked = ', checkedValues);
+};
 const RoomePage: React.FC = () => {
   const [fromUserId, setFromUserId] = useState<string>('');
   const [toUserId, setToUserId] = useState<string>('');
@@ -146,6 +162,21 @@ const RoomePage: React.FC = () => {
         break;
     }
   };
+  const callArrive = (callData: any) => {
+    console.log('media service call arrived: ', callData);
+    if (CALL_TYPE.isPttAll(callData.callType)) {
+      $confirm('收到对讲邀请，是否加入?', '通知', {
+        confirmButtonText: '接收',
+        cancelButtonText: '拒绝',
+        type: 'info'
+      }).then(() => {
+        this.acceptCall(callData);
+      })
+        .catch(() => {
+          this.rejectCall(callData);
+        });
+    }
+  },
   // 注册服务结束
 
   // 创建通话操作
@@ -210,6 +241,13 @@ const RoomePage: React.FC = () => {
   const stopCall = () => {
     console.log('结束通话', fromUserId, toUserId);
   };
+  // Define userList as a state variable or constant
+  const userList = [
+    { userId: 'user1', name: 'User 1' },
+    { userId: 'user2', name: 'User 2' },
+    { userId: 'user3', name: 'User 3' },
+  ];
+
   return (
     <div>
       <div>
@@ -274,12 +312,47 @@ const RoomePage: React.FC = () => {
           >
             创建对讲
           </Button>
-          <Button type="primary" className="hi-button">
+          <Button
+            type="primary"
+            className="hi-button"
+            style={{ marginRight: 10 }}>
             结束通话
           </Button>
         </div>
-      </div>
-    </div>
+        {/* <!-- 成员列表区域 --> */}
+        <div className="title">成员列表</div>
+        <div className="content">
+          <h3>成员列表</h3>
+          <div className="members-list">
+            {userList.map((user) => (
+              <div key={user.userId} className="member-item">
+                <span>{user.name}</span>
+                <span>{user.userId}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* <!-- 本地流区域 --> */}
+        {/* <div>
+          <div className="local-stream" style={{ display: showLocalPreview ? 'block' : 'none' }}>
+            <div className="video" ref={streamCameraRef}>
+              <video
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                ref={localVideoMediaRef}
+              ></video>
+            </div>
+            <div className="status">
+              <div className="name">{fromUserId}</div>
+              <div className="stream-control">
+                <div className="audio-control control">
+                  <span className={muteLocalAudio ? 'audio-mute' : 'audio-unmute'}></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
+      </div >
+    </div >
   );
 };
 
